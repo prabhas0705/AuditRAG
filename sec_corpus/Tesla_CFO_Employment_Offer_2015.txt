@@ -1,0 +1,112 @@
+================================================================================
+DOCUMENT: Tesla_CFO_Employment_Offer_2015.txt
+COMPANY: Tesla, Inc.
+CONTRACT TITLE: Tesla Motors, Inc. - Offer Letter to Jason Wheeler (CFO)
+TYPE: Executive Employment Agreement
+SOURCE: SEC EDGAR (https://www.sec.gov/Archives/edgar/data/1318605/000156459016013195/tsla-ex1012_209.htm)
+================================================================================
+
+EX-10.12
+3
+tsla-ex1012_209.htm
+EX-10.12
+
+tsla-ex1012_209.htm
+
+Exhibit 10.12
+
+October 8, 2015
+
+Jason Wheeler
+
+Dear Jason:
+
+Tesla Motors, Inc. (“Tesla” or the “Company”) is pleased to offer you the exempt, salaried position of Chief Financial Officer (CFO) on the terms set forth below.  As CFO, you will perform the duties customarily associated with this position. You will report to Elon Musk, Chief Executive Officer. Your duties, responsibilities, job title, and work location may be changed at any time by Tesla.
+
+Your annualized salary will be $500,000 per year, subject to standard payroll deductions and withholdings. As an exempt employee, you will not be entitled to overtime.  You will be eligible for vacation and sick leave according to Tesla's standard policy.  Subject to the rules of the applicable plan documents, you will also be eligible to receive other benefits Tesla may provide to its employees (e.g., health and dental insurance coverage) beginning on your date of hire.  Tesla may consider you for bonuses, although the amount of such bonuses, if any, and the criteria for determining the award of such bonuses, if any, shall be in the sole discretion of Tesla.  Of course, Tesla reserves the right to modify your compensation and benefits from time to time, as it deems necessary.
+
+Tesla Motors, Inc. offers a competitive benefits package described below:
+
+Equity Grant:   Subject to the approval of the Compensation Committee of Tesla's Board of Directors and our standard equity policies, you will receive an equity award with a value of $15 million in the form of stock options, which you will only receive at the time of vesting, as described below.  This value is determined based on our standard equity granting policies.  The actual number of Shares and stock options that you receive will depend on the value of our stock at or around the time your grant is approved, as determined by Tesla’s Compensation Committee.  Please note that for purposes of this allocation, 1 Share is equivalent to 3.00 stock options.  This award, which is made pursuant to Tesla's 2010 Equity Incentive Plan, shall be subject to vesting conditions.
+
+Specifically, the Shares shall vest over a period of four years: twenty-five percent (25%) of the award shall vest on each of the first, second, third, and fourth anniversary of the date vesting begins (such date to be indicated in your Award Agreement), subject to your continuing eligibility through the applicable vesting dates.  In contrast, with respect to stock options, twenty-five percent (25%) of the shares subject to the option shall vest 12 months after the date your vesting begins and no shares shall vest before such date and no rights to any vesting shall be earned or accrued prior to such date, and the remaining shares shall vest monthly over the next 36 months in equal monthly amounts subject to your continuing eligibility.  No Shares or stock options shall vest other than on
+
+the anniversary dates.  This grant shall be subject to the terms and conditions of Tesla’s 2010 Equity Incentive Plan and your Award Agreement, including vesting requirements.
+
+Please be aware that Tesla makes no representation about the future value of the equity award granted herein, and you should be aware that the value of this award will fluctuate in the future.  Finally, the receipt of this award is subject to your signing the appropriate grant agreements.
+
+401K Program: You will be eligible to participate in Tesla’s 401K program after your first pay check. Our 401K program is administered by Fidelity Investments.
+
+Vacation Program: Regular full-time employees and part-time employees who work 20 hours per week are eligible for PTO immediately and accrue PTO at 1.25 days per month (for a total of 15 days per calendar year).
+
+The Company is excited about your joining and looks forward to a beneficial and fruitful relationship.  Nevertheless, you should be aware that your employment with the Company is for no specified period and constitutes at-will employment.  As a result, you are free to resign at any time, for any reason or for no reason, with or without notice.  Similarly, the Company is free to conclude its employment relationship with you at any time, with or without cause, and with or without notice.
+
+We ask that, if you have not already done so, you disclose to Tesla any and all agreements relating to your prior employment that may affect your eligibility to be employed by Tesla or limit the manner in which you may be employed.  It is Tesla’s understanding that any such agreements will not prevent you from performing the duties of your position and you represent that such is the case.   We want to emphasize that we do not wish you to bring any confidential or proprietary materials of any former employer which would violate any obligations you may have to your former employer .   You agree not to make any unauthorized disclosure to Tesla or use on behalf of Tesla any confidential information belonging to any of your former employers (except in accordance with agreements between Tesla and any such former employer).  You also warrant that you do not possess any property containing a third party's confidential and proprietary information.  Of course, during your employment with Tesla, you may make use of information generally known and used by persons with training and experience comparable to your own, and information which is common knowledge in the industry or is otherwise legally available in the public domain. Moreover, you agree that, during the term of your employment with the Company, you will not engage in any other employment, occupation, consulting or other business activity directly related to the business in which Tesla is now involved or becomes involved during the term of your employment, nor will you engage in any other activities that conflict with your obligations to Tesla.
+
+As a Tesla employee, you will be expected to abide by all Tesla policies and procedures, and , as a condition of your employment, you will sign and comply with Tesla's standard confidentiality agreement which prohibits unauthorized use or disclosure of Tesla confidential information or the confidential information of Tesla's clients.
+
+In addition, to ensure the rapid and economical resolution of disputes that may arise in connection with your employment with Tesla, you and Tesla agree that any and all disputes, claims, or causes of action, in law or equity, arising from or relating to your employment, or the termination of your employment, will be resolved, to the fullest extent permitted by law by final, binding and confidential arbitration in your city and state of employment conducted by the
+
+Judicial Arbitration and Mediation Services/Endispute, Inc. (“J AMS”), or its successors, under the then current rules of JAMS for employment disputes; provided that:
+
+a.
+
+Any claim, dispute, or cause of action must be brought in a party’s individual capacity, and not as a plaintiff or class member in any purported class or representative proceeding; and
+
+b.
+
+The arbitrator shall have the authority to compel adequate discovery for the resolution of the dispute and to award such relief as would otherwise be permitted by law; and
+
+c.
+
+The arbitrator shall not have the authority to consolidate the claims of other employees and shall not have the authority to fashion a proceeding as a class or collective action or to award relief to a group or class of employees in one arbitration proceeding; and
+
+d.
+
+The arbitrator shall issue a written arbitration decision including the arbitrator’s essential findings and conclusions and a statement of the award; and
+
+e.
+
+Both you and Tesla shall be entitled to all rights and remedies that you or Tesla would be entitled to pursue in a court of law; and
+
+f.
+
+Tesla shall pay all fees in excess of those which would be required if the dispute was decided in a court of law.
+
+Nothing in this agreement is intended to prevent either you or Tesla from obtaining injunctive relief in court to prevent irreparable harm pending the conclusion of any such arbitration.  Notwithstanding the foregoing, you and Tesla each have the right to resolve any issue or dispute arising under the Proprietary Information and Inventions Agreement by Court action instead of arbitration.
+
+Arbitrable claims do not include, and this Agreement does not apply to or otherwise restrict, administrative claims you may bring before any government agency where, as a matter of law, the parties may not restrict your ability to file such claims (including discrimination and/or retaliation claims filed with the Equal Employment Opportunity Commission and unfair labor practice charges filed with the National Labor Relations Board). Otherwise, it is agreed that arbitration shall be the exclusive remedy for administrative claims.
+
+You acknowledge and agree that: (i) in the course of your employment by the Company, it will be necessary for you to create, use, or have access to (A) technical, business, or customer information, materials, or data relating to the Company’s present or planned business that has not been released to the public with the Company’s authorization, including, but not limited to, confidential information, materials, or proprietary data belonging to the Company or relating to the Company’s affairs (collectively, “Confidential Information”) and (B) information and materials that concern the Company’s business that come into the Company’s possession by reason of employment with the Company (collectively, “Business Related Information”); (ii) all Confidential Information and Business Related Information are the property of the Company; (iii) the use, misappropriation, or disclosure of any Confidential Information or Business Related Information would constitute a breach of trust and could cause serious and irreparable injury to the Company; and (iv) it is essential to the protection of the Company’s goodwill and maintenance of the Company’s competitive position that all Confidential Information and Business Related Information be kept confidential and that you do not disclose any Confidential Information or Business Related Information to others or use Confidential Information or Business Related Information to your own advantage or the advantage of others.
+
+In recognition of the acknowledgment  above, you agree that until the Confidential Information and/or Business Related Information becomes publicly available (other than through a breach by you), you shall: (i) hold and safeguard all Confidential Information and Business Related Information in trust for the Company; (ii) not appropriate or disclose or make available to anyone for use outside of the Company’s organization at any time any Confidential Information and Business Related Information, whether or not developed by you; (iii) keep in strictest confidence any Confidential Information or Business Related Information; (iv) not disclose or divulge, or allow to be disclosed or divulged by any person within your control, to any person, firm, or corporation, or use directly or indirectly, for your own benefit or the benefit of others, any Confidential Information or Business Related Information; and (v) upon the termination of your employment, return all Confidential Information and Business Records and not make or retain any copies or exacts thereof.
+
+If you accept our offer, your first day of employment is to be Monday, November 30 th , 2015.  This letter agreement constitutes the complete, final and exclusive embodiment of the entire agreement between you and Tesla with respect to the terms and conditions of your employment, and it supersedes any other agreements or promises made to you by anyone, whether oral or written. This Agreement cannot be changed, amended, or modified except in a written agreement signed by an officer of Tesla. This letter agreement shall be construed and interpreted in accordance with the laws of the State of California.
+
+As required by immigration law, this offer of employment is conditioned upon satisfactory proof of your right to work in the United States.
+
+This offer of employment is contingent upon the successful completion of your reference and background checks.
+
+If you choose to accept our offer under the terms described above, please indicate your acceptance, by signing below and returning it to me prior to Monday, October 12 th , 2015 after which date this offer will expire.
+
+We look forward to your favorable reply and to a productive and enjoyable work relationship.
+
+Very truly yours,
+
+Tesla Motors, Inc.
+
+Elon Musk
+
+Chairman of the Board and CEO
+
+Accepted by:
+
+/s/ Jason Wheeler
+
+Date:
+
+10/9/15
+
+Start Date:
+
+Monday, November 30 th , 2015

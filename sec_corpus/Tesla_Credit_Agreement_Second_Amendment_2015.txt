@@ -1,0 +1,226 @@
+================================================================================
+DOCUMENT: Tesla_Credit_Agreement_Second_Amendment_2015.txt
+COMPANY: Tesla, Inc.
+CONTRACT TITLE: Tesla Motors, Inc. - Second Amendment to ABL Credit Agreement
+TYPE: Contract Amendment
+SOURCE: SEC EDGAR (https://www.sec.gov/Archives/edgar/data/1318605/000156459016013195/tsla-ex1028b_206.htm)
+================================================================================
+
+EX-10.28B
+5
+tsla-ex1028b_206.htm
+EX-10.28B
+
+tsla-ex1028b_206.htm
+
+Exhibit 10.28B
+
+Execution Version
+
+SECOND AMENDMENT TO CREDIT AGREEMENT
+
+SECOND AMENDMENT TO CREDIT AGREEMENT (this “ Amendment ”), dated as of December 31, 2015, to that certain ABL Credit Agreement, dated as of June 10, 2015 (as amended, supplemented or otherwise modified through the date hereof, the “ Credit Agreement ”), among Tesla Motors, Inc. (the “ Company ”, and together with each Wholly-Owned Domestic Subsidiary of the Company that becomes a U.S. Borrower pursuant to the terms of the Credit Agreement, collectively, the “ U.S. Borrowers ”), Tesla Motors Netherlands B.V. (“ Tesla B.V. ”, and together with each Wholly-Owned Dutch Subsidiary of Tesla B.V. that becomes a Dutch Borrower pursuant to the terms of the Credit Agreement, collectively, the “ Dutch Borrowers ”; and the Dutch Borrowers, together with the U.S. Borrowers, collectively, the “ Borrowers ”), the lenders from time to time party thereto (the “ Lenders ”), Deutsche Bank AG New York Branch, as Administrative Agent (the “ Administrative Agent ”) and as Collateral Agent, and the other agents party thereto.
+
+RECITALS :
+
+WHEREAS, the Company intends to form New B.V. (as defined below);
+
+WHEREAS, Tesla B.V. will transfer certain of its assets (excluding assets included in the Dutch Borrowing Base) to New B.V;
+
+WHEREAS, pursuant to Section 13.12 of the Credit Agreement, the Credit Agreement may be amended with the written consent of the Required Lenders and each Credit Party party to the Credit Agreement; and
+
+WHEREAS, the parties now wish to amend the Credit Agreement in certain respects.
+
+AGREEMENT:
+
+NOW, THEREFORE, in consideration of the premises and mutual covenants contained herein, the parties hereto agree as follows:
+
+Section 1 . Defined Terms. Unless otherwise specifically defined herein, each term used herein (including in the recitals above) has the meaning assigned to such term in the Credit Agreement.
+
+Section 2 . Amendments.
+
+2.1  Amendments to Section 1.1 of the Credit Agreement . The following definitions shall be inserted into Section 1.1 of the Credit Agreement in appropriate alphabetical order:
+
+“ New B.V. ” means Tesla International B.V., a company organized under the laws of the Netherlands and that is (or will be when formed) a Wholly-Owned Subsidiary of Tesla Motors Netherlands Coöperatief U.A.
+
+“ Tax Sharing Agreement ” means a tax sharing agreement, entered into among New B.V., Tesla Motors Netherlands Coöperatief U.A., Tesla B.V. and any other Dutch Affiliates of Tesla B.V. who may become members of a fiscal unity ( fiscal eenheid ) with Tesla B.V. and  the other Dutch Credit Parties from time to time party thereto.
+
+“ Second Amendment ” means that certain Second Amendment, dated as of December 31, 2015, among the Company, Tesla B.V., the Administrative Agent and the Lenders party thereto.
+
+2.2  Amendment to Section 8.25 of the Credit Agreement . Section 8.25 of the Credit Agreement is hereby amended by deleting such Section in its entirety and replacing it with the following:
+
+“ Fiscal Unity . No Dutch Credit Party is a member of a fiscal unity ( fiscal eenheid ) other than (a) a fiscal unity among the Dutch Credit Parties only or (b) so long as the Tax Sharing Agreement remains in full force and effect, a fiscal unity among the Dutch Credit Parties and other Dutch Affiliates of Tesla B.V. from time to time party to such Tax Sharing Agreement, Tesla Motors Netherlands Coöperatief U.A., and the New B.V.”
+
+2.3  Amendments to Section 10.08  of the Credit Agreement . Section 10.08 of the Credit Agreement is hereby amended by deleting “or” at the end of clause (b) thereof, deleting the “.” at the end of clause (c) thereof and inserting “; or” in lieu thereof and  inserting the following new clause (d) after clause (c) thereof:
+
+“amend, modify, change or waive any term or provision of the Tax Sharing Agreement in a manner which is adverse to the interests of the Lenders in any material respect (as reasonably determined by the Company in consultation with the Administrative Agent).”
+
+2.4  Amendment to Section 10.13 of the Credit Agreement . Section 10.13 of the Credit Agreement is hereby amended by deleting such Section in its entirety and replacing it with the following:
+
+“ Fiscal Unity . No Dutch Credit Party shall create or become a member of a fiscal unity ( fiscal eenheid ) other than (a) a fiscal unity among the Dutch Credit Parties only or (b) so long as the Tax Sharing Agreement remains in full force and effect, a fiscal unity among the Dutch Credit Parties and other Dutch Affiliates of Tesla B.V. from time to time party to such Tax Sharing Agreement, Tesla Motors Netherlands Coöperatief U.A. and the New B.V.
+
+Section 3 . Tax Sharing Agreement .  The form of Tax Sharing Agreement referenced in the Credit Agreement (as amended by this Agreement) has been provided to the Administrative Agent.
+
+Section 4. Conditions. This Agreement shall become effective on the date on which the following conditions precedent have been satisfied or waived (the date on which such conditions shall have been so satisfied or waived, the “ Amendment Effective Date ”):
+
+(a) The Administrative Agent shall have received a counterpart of this Agreement, executed and delivered by the Credit Parties, the Administrative Agent and the Required Lenders.
+
+(b) All fees required to be paid to the Administrative Agent and the Lenders in connection herewith, accrued reasonable and documented out-of-pocket costs and expenses (including, to the extent invoiced in advance, reasonable legal fees and out-of-pocket expenses of counsel) and other compensation due and payable to the Administrative Agent and the Lenders on or prior to the Amendment Effective Date shall have been paid.
+
+(c) Each of the representations and warranties made by the Credit Parties in or pursuant to the Credit Agreement or in or pursuant to the other Credit Documents shall be true and correct in all material respects (except that any representation and warranty that is qualified or subject to “Material Adverse Effect” shall be true and correct in all respects) on and as of the Amendment Effective Date as if made on and as of such date except for such representations and warranties expressly stated to be made as of an earlier date (in which case such representations and warranties shall be true and correct in all material respects as of such earlier date).
+
+(d) No Default or Event of Default shall exist on the Amendment Effective Date.
+
+(e) The Administrative Agent shall have received an officer’s certificate from an Authorized Officer of the Company and dated as of the Amendment Effective Date, certifying that each condition set forth in Sections 4(c) and (d) hereof have been satisfied on and as of the Amendment Effective Date.
+
+Section 5.   Representations and Warranties, etc .  The Borrowers hereby confirm, reaffirm and restate that each of the representations and warranties made by any Credit Party in the Credit Documents is true and correct in all material respects on and as of the Amendment Effective Date (it being understood and agreed that (x) any
+
+representation or warranty which by its terms is made as of a specified date shall be required to be true and correct in all material respects only as of such specified date and (y) any representation or warranty that is qualified by “materiality”, “Material Adverse Effect” or similar language shall be true and correct in all respects).  The Borrowers represent and warrant that, immediately after giving effect to the occurrence of the Amendment Effective Date, no Default or Event of Default has occurred and is continuing.  The Borrowers represent and warrant that each Credit Party (i) has the Business power and authority to execute, deliver and perform the terms and provisions of this Agreement and has taken all necessary Business action to authorize the execution, delivery and performance by thereof and (ii) has duly executed and delivered this Agreement, and that this Agreement constitutes a legal, valid and binding obligation of the Borrowers enforceable against each Borrower in accordance with its terms, except as enforceability may be limited by applicable bankruptcy, insolvency, reorganization, moratorium or similar laws affecting the enforcement of creditors’ rights generally and by general equitable principles (whether enforcement is sought by proceedings in equity or at law).
+
+Section 6. Governing Law. This Agreement and the rights of the parties hereunder shall be governed by and construed in accordance with the laws of the State of New York (without regard to conflicts of law principles that would result in the application of any law other than the law of the State of New York).
+
+Section 7 . Effect of This Agreement. Except as expressly set forth herein, this Agreement shall not by implication or otherwise limit, impair, constitute a waiver of or otherwise affect the rights and remedies of any Lender or Agent under the Credit Agreement or any other Credit Document, and shall not alter, modify, amend or in any way affect any of the terms, conditions, obligations, covenants or agreements contained in the Credit Agreement or any other Credit Document, all of which are ratified and affirmed in all respects and shall continue in full force and effect.  Nothing herein shall be deemed to entitle any party to a consent to, or a waiver, amendment, modification or other change of, any of the terms, conditions, obligations, covenants or agreements contained in the Credit Agreement or any other Credit Document in similar or different circumstances.
+
+Section 8. Counterparts. This Agreement may be signed in any number of counterparts, each of which shall be an original, with the same effect as if the signatures thereto and hereto were upon the same instrument.  Delivery of an executed signature page of this Agreement by facsimile transmission or electronic transmission (e.g., “pdf” or “tif”) shall be effective as delivery of a manually executed counterpart hereof.
+
+Section 9 . Miscellaneous. This Agreement shall constitute a Credit Document for all purposes of the Credit Agreement. The Borrowers shall pay all reasonable fees, costs and expenses of the Administrative Agent incurred in connection with the negotiation, preparation and execution of this Agreement and the transactions contemplated hereby.
+
+[ remainder of page intentionally left blank ]
+
+IN WITNESS WHEREOF, the parties hereto have caused this Amendment to be duly executed as of the date first above written.
+
+TESLA MOTORS, INC.
+
+By:
+
+/s/ Jason Wheeler
+
+Name: Jason Wheeler
+
+Title: Chief Financial Officer
+
+TESLA MOTORS NETHERLANDS B.V.
+
+By:
+
+/s/ Todd Maron
+
+Name: Todd Maron
+
+Title: Managing Director
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+DEUTSCHE BANK AG NEW YORK BRANCH , as Administrative Agent, Collateral Agent and a Lender
+
+By:
+
+/s/ Michael Shannon
+
+Name: Michael Shannon
+
+Title: Vice President
+
+By:
+
+/s/ Ming K. Chu
+
+Name: Ming K. Chu
+
+Title: Vice President
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+Bank of America, N.A., as an Issuing Lender and a Lender
+
+By:
+
+/s/ Robert M. Dalton
+
+Name: Robert M. Dalton
+
+Title:  Senior Vice President
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+JPMorgan Chase Bank, N.A., as an Issuing Lender and a Lender
+
+By:
+
+/s/ Jeannette Behm
+
+Name: Jeannette Behm
+
+Title:  Authorized Officer
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+Morgan Stanley Senior Funding, Inc., as a Lender
+
+By:
+
+/s/ Emanuel Ma
+
+Name: Emanuel Ma
+
+Title:  Vice President
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+WELLS FARGO BANK, N.A., as a Lender
+
+By:
+
+/s/ Krista Mize
+
+Name: Krista Mize
+
+Title:  Authorized Signatory
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+CITIBANK, N.A., as a Lender
+
+By:
+
+/s/ K. Kelly Gunness
+
+Name: K. Kelly Gunness
+
+Title:  Vice President and Director
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+CREDIT SUISSE AG, CAYMAN ISLANDS BRANCH,
+
+as a Lender
+
+By:
+
+/s/ Mikhail Faybusovich
+
+Name: Mikhail Faybusovich
+
+Title:  Authorized Signatory
+
+By:
+
+/s/ Karim Rahimtoola
+
+Name: Karim Rahimtoola
+
+Title:  Authorized Signatory
+
+[Second Amendment to Credit Agreement – Signature Page]
+
+GOLDMAN SACHS BANK USA, as a Lender
+
+By:
+
+/s/ Jerry Li
+
+Name: Jerry Li
+
+Title:  Authorized Signatory
+
+[Second Amendment to Credit Agreement – Signature Page]

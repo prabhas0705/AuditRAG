@@ -1,0 +1,74 @@
+================================================================================
+DOCUMENT: Tesla_Panasonic_Battery_Supply_Notice_2015.txt
+COMPANY: Tesla, Inc.
+CONTRACT TITLE: Tesla Motors, Inc. - Notification of Adding Panasonic Energy Corp to Supply Agreement
+TYPE: Commercial Supply Agreement
+SOURCE: SEC EDGAR (https://www.sec.gov/Archives/edgar/data/1318605/000156459016013195/tsla-ex1025a_208.htm)
+================================================================================
+
+EX-10.25A
+4
+tsla-ex1025a_208.htm
+EX-10.25A
+
+tsla-ex1025a_208.htm
+
+Exhibit 10.25A
+
+CONFIDENTIAL
+
+February 24, 2015
+
+To:
+
+Director, Battery Technology
+
+Tesla Motors, Inc.
+
+3500 Deer Creek Road Palo Alto, CA 94304
+
+Cc: Legal Department
+
+RE:
+
+Notification of adding Panasonic Energy Corporation of North America as a Co-Party to General Terms and Conditions, Production Pricing Agreement and Investment Letter Agreement for Panasonic’s First Line Unit at Giga-Factory
+
+Dear Mr. Kurt Kelty,
+
+This letter is to notify Tesla Motors, Inc. pursuant to Section 16.4(a)(i) of General Terms and Conditions dated October 1, 2014 between Tesla Motors, Inc. and Panasonic Corporation (“General Terms”) that Panasonic Energy Corporation of North America, an Affiliate of Panasonic Corporation, is added as of January 1, 2015 as a co-party to those General Terms, Production Pricing Agreement dated September 30, 2014 and Investment Letter Agreement for Panasonic’s First Production Line Unit at Giga-Factory dated October 1, 2014.
+
+Please kindly indicate Tesla’s confirmation on the foregoing by signing where indicated below, and return the original to Panasonic Corporation.
+
+Sincerely yours,
+
+/s/ Shinji Sakamoto
+
+/s/ Masayuki Kitabayashi
+
+Shinji Sakamoto
+
+Masayuki Kitabayashi
+
+Executive Officer
+
+President
+
+Senior Vice President
+
+Panasonic Energy Corporation of North America
+
+Automotive & Industrial Systems Company
+
+Panasonic Corporation
+
+Confirmed by Tesla Motors, Inc.
+
+By:
+
+/s/ JB Straubel
+
+Name: JB Straubel
+
+Title: CTO
+
+Tesla Motors, Inc.
