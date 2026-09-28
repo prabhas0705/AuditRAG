@@ -62,7 +62,7 @@ sec_corpus/            benchmark contracts
 | Recall@3 | 100% |
 | MRR | 0.79 |
 | Fact grounding | 90.6% |
-| Hallucination rate | 0% |
+| Hallucination rate | 0% (LLM mode) / 9.4% (offline extractive) |
 | Pip dependencies | 0 |
 
 ## Contributing
