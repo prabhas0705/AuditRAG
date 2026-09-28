@@ -1,0 +1,111 @@
+United States v. Google LLC is a federal antitrust case brought by the United States Department of Justice (DOJ) against Google LLC on January 24, 2023. The suit established that Google illegally monopolized the Ad tech market in violation of sections 1 and 2 of the Sherman Antitrust Act of 1890. The suit is separate from the first antitrust case launched in 2020 which established that Google illegally monopolized the search engine market.
+Filed in the U.S. District Court for the Eastern District of Virginia, the suit aimed to force Google to sell off significant portions of adtech business and require the company to cease certain business practices. The trial concluded in September 2024. On April 17, 2025, it was ruled that Google had formed an illegal monopoly in its advertising business.
+
+
+== Background ==
+
+
+=== Growth of Google's adtech business ===
+
+Beginning in the 2000s, Google gradually increased its presence in the adtech market, with the company acquiring DoubleClick, Invite Media, and AdMeld. The acquisition of DoubleClick received criticism from privacy groups including the Electronic Privacy Information Center (EPIC), who petitioned the Federal Trade Commission (FTC) to scrutinize the deal. The FTC ultimately approved the $3.1 billion acquisition of DoubleClick in December 2007.
+By 2021, Google's adtech division was the company's second largest business behind Google Search, generating approximately $31.7 billion in revenue for the company. As of 2023, Google's advertising business generated an estimated 80% of the company's revenue.
+Jonathan Kanter, the Assistant Attorney General for the Antitrust Division, likened Google's dominance in the adtech market to a situation in which Goldman Sachs or Citibank owned the New York Stock Exchange.
+In August 2024, following a ruling by Judge Amit P. Mehta that Google monopolized the online search market, the Justice Department began considering remedies, including a potential breakup of Google’s business units like Chrome and Android, and other measures to curb Google’s dominance in AI products and online advertising. The DOJ is also contemplating enforcing measures that would prevent Google from maintaining exclusive contracts and might require the company to divest certain assets or share its data with competitors, particularly in the online search and advertising sectors.
+
+
+=== Legislative scrutiny ===
+During the 117th United States Congress, a bipartisan coalition of U.S. Senators introduced legislation aimed at breaking up Google and other "Big Tech" companies alleged dominance in the market. The legislation, known as the Advertising Middlemen Endangering Rigorous Internet Competition Accountability (AMERICA) Act, was reintroduced in the 118th Congress.
+The ruling against Google is seen as a significant win for antitrust enforcement in the U.S., setting a precedent for how the government might tackle monopolistic practices in the tech industry. Analysts suggest that the potential remedies could have a profound impact on the digital advertising landscape and the broader tech ecosystem.
+
+
+== Early proceedings (2023–2024) ==
+Following the filing of the lawsuit, the DOJ claimed it has documentation that would bolster its case. This includes an alleged statement by a Google advertising executive who took issue with the company "owning the platform, the exchange and a huge network", who compared it to if Goldman Sachs or Citibank owned the New York Stock Exchange (NYSE). In what has been described as an unconventional move for a federal antitrust lawsuit, the DOJ has pushed for a jury trial for the case.
+In March 2023, judge Leonie Brinkema denied Google's request to move the lawsuit from the District Court for the Eastern District of Virginia to a venue in New York, which is considered a more favorable venue for Google. In March 2023, Google filed a motion to dismiss the case. Brinkema denied this request in April 2023, who stated that the DOJ's initial complaint sufficiently detailed for the case to proceed.
+In August 2023, Google's pushed for the recusal of Assistant Attorney General Kanter from the case, arguing Kanter's past representation of Google's rivals in private practice meant he was unfairly biased against the company. Brinkema denied Google's effort to force Kanter's recusal in September 2023, describing the company's bias claims as "essentially a red herring defense".
+In February 2024, it was announced that the case would begin trial on September 9, 2024. Following a dispute between the DOJ and Google in the 2023 search trial regarding the release of public exhibits pertaining to the case, Brinkema urged both parties to resolve any similar dispute ahead of the 2024 trial.
+On April 26, 2024, Google filed a motion seeking summary judgement in the case. In the motion, Google accused the DOJ's of improperly calculating Google's share of the digital advertising market.
+On May 16, 2024, Google asked the court to strike the jury trial demand made by the DOJ, as they had compensated all U.S plaintiffs for the appropriate damages. After hearing from both sides, the court ruled in favor of Google, ordering for the trial to take place before a magistrate judge instead of a jury.
+
+
+=== State partnerships ===
+The lawsuit was filed in conjunction with the attorneys general of California, Colorado, Connecticut, New Jersey, New York, Rhode Island, Tennessee, and Virginia on January 24, 2023. Tennessee Attorney General Jonathan Skrmetti, a Republican, stated that Tennessee was "proud to be part of this bipartisan effort to hold Google accountable and protect consumers from its harmful ad tech monopoly."
+On April 3, 2023, Washington Attorney General Bob Ferguson announced that the state would join the lawsuit. On April 18, 2023, nine additional states joined the lawsuit, bringing the total to eighteen: Arizona, Michigan, Nebraska, Illinois, Minnesota, New Hampshire, North Carolina, Washington, and West Virginia.
+
+
+== Trial ==
+The trial began before Judge Brinkema on September 9, 2024, and was expected to last for several weeks. When it began, the trial moved at a surprising pace and concluded in 3 weeks.
+
+
+=== Opening arguments ===
+In opening arguments, lead DOJ attorney Julia Tarver Wood said that Google had used its acquisitions of ad software companies like DoubleClick and AdMeld to shore up an 87% market share in the ad-selling industry, stifling competition and hurting both consumers and publishers in the process. Wood further claimed that Google locks customers into using their products and controls how transactions are made within the ad-tech market.
+Google's lead attorney Karen Dunn countered by saying that people use Google's products simply due to the fact that they are "simple, affordable, and effective," she added that the case was an assault on essential tools that publishers and advertisers relied on.
+
+
+=== Week 1 ===
+The first week of the trial largely focused on how Google's ad-tech products worked together to conduct behind-the-scenes "millisecond ad auctions." After opening arguments, prosecutors called Gannett executive Tim Wolfe to the stand as their first witness. Wolfe testified that companies like Gannett feel as if they have "no choice" but to use Google's products, despite them knowing that they are on the losing end of the deal. Prosecutors then called former News Corp executive Stephanie Layser to the stand, who said that the company in 2017 estimated that they would have lost around $9 million by moving away from Google's ad-tech products, raising an appearance of captivity on Google's end. On September 11, court documents were presented that showed former Google executive David Rosenblatt telling his colleagues in 2009 that the goal for Google's online advertising business was to "crush" the competition. These documents were then corroborated by former DoubleClick executive Brad Bender, with witnesses also adding that Google's 20% ad revenue fee was the "highest in the industry."
+Internal documents further showed that Google knew that publishers would "balk" when it implemented measures in 2019 to prevent the diverting of profits to rival competitors, with the DOJ attempting to illustrate that Google had ignored the preferences of its customers to strengthen their own business position. These measures, witnesses testified, involved unified pricing rules and header bidding, a term for the process in which publishers skirted around Google's ad exchange auctions. Trial testimony and documents showed that for years, Google had given its ad exchange, AdX, preferential treatment when it came to matching a publisher's proposed floor price. Professor Ramamoorthi Ravi of Carnegie Mellon University testified that rules imposed by Google "seem to have been designed to advantage Google's own products." Prosecutors also called Brian Boland, a former Facebook ad chief, who testified that Facebook initially had planned to challenge Google in the industry, but pulled out and instead made a deal with them in 2018 due to their conclusion that they wouldn't be able to compete.
+Also on the opening day, Andrew Casale, president and CEO of Index Exchange, testified that 83 percent of the ad impressions his company transacted came through Google's DFP ad server, describing the difficulty of competing in a market where Google controlled both the ad server and the exchange. James Avery, CEO of ad server company Kevel, similarly testified that accessing Google's AdX exchange required using Google's DFP, a tying arrangement that prevented rival ad servers from gaining publisher clients.
+
+
+=== Week 2 ===
+On September 10, prosecutors called YouTube CEO Neal Mohan to the stand. In his testimony, Mohan refuted allegations of monopolist behavior by Google, saying that the company had "plenty of competition." As Mohan testified, prosecutors presented documents that illustrated how Google acquired rival companies, "parked" them away, and monopolized the market to push out competition. Prosecutors also similarly called former Google executives Jonathan Bellack and Nirmal Jayaram to the stand, who both sought to disavow and contradict emails they wrote in the past. Bellack, when confronted with an email he wrote comparing Google's ad-tech business to "if Goldman or Citibank owned the NYSE" (New York Stock Exchange), dismissed his email as "late-night ramblings." Jed Dederick, Chief Revenue Officer of The Trade Desk, described Google's actions as "draconian" and "absolutist."
+Brian O'Kelley, the former CEO of ad exchange AppNexus (later Xandr), testified about Google's practices in the ad exchange market. Former OpenX CEO Tim Cadogan and executives from Magnite and Pubmatic also described the competitive challenges of operating independent ad technology platforms alongside Google's integrated stack.
+Prosecutors also sought to show that Google deliberately destroyed damning evidence, a problem that was levied at Google's first antitrust trial. Former Google executive Chris LaSala testified on September 20 that Google's chat messages had history off "by default" and that business executives often referred to conversations as "privileged and confidential." The prosecution rested its case shortly thereafter, after which Google began to mount its defense. Scott Sheffer, Google's first witness, said that the ad tech industry "has been exceptionally fluid" and that it was vastly more complex and competitive than what the DOJ had portrayed it to be.
+
+
+=== Week 3 ===
+Google continued its defense on September 23 by calling witnesses to help explain the value of the products that they offer. Google executives testified that the company had helped consumers and competitors alike by attempting to fight off ad fraud and spam through the spending of millions of dollars. They further explained that if their unit were to be broken up, Google's ability to fight such issues would be compromised. Per Bjorke, the director of product management at Google, testified that the company "can much more easily fight spam" with a large-scale ad platform. Google also refuted allegations that they had "locked" advertisers and publishers into an "unfair system," countering by saying that competitors take higher rates from publishers than Google does and that they were helping to foster competition. Adam Stewart, a Google vice president, explained that Google was actually "losing (market) share" to companies like Facebook and The Trade Desk. Mark Israel, a Google expert, said that the government was "vastly underestimating" the competition that the company is facing.
+Google rested on September 27, after which the prosecution delivered a brief rebuttal.
+
+
+=== Closing arguments ===
+Closing arguments were delivered on November 25. The DOJ concluded by stating that Google is "once, twice, three times a monopolist," with Google's lead lawyer Karen Dunn countering that the government had provided little evidence to back up their allegations and that Google's actions were one of "innovation in response to competition." Judge Brinkema raised concerns about Google policies leading to the deliberate deletion of some internal communications, not indicating, though, on how she may rule.
+
+
+=== Verdict ===
+Judge Brinkema released her verdict on April 17, 2025, in a 115-page decision. She found Google liable on two of three counts by concluding that the company had unlawfully monopolized the publisher ad server and ad exchange markets, remarking that the company's conduct had "substantially harmed" its publishers and, "ultimately, consumers of information on the open web." In her decision, Judge Brinkema also found that the DOJ had not proven there to be a "distinct and relevant market" for advertiser ad networks, dismissing a related third count. The judge's findings drew an immediate response from Google, who said that they planned to appeal part of her ruling.
+The decision was Google's second, following a separate antitrust ruling in August 2024 that found Google illegally monopolized the search market. Hearings are set to be held to determine potential remedies. The DOJ had sought, at minimum, the divestiture of Google Ad Manager.
+In September 2026, Judge Brinkema ruled that Google must make changes to its advertising technology practices but declined to require Google to sell AdX or divest Google Ad Manager. The court adopted most of the behavioral remedies proposed by Google and the Department of Justice, with some modifications.
+
+
+== Reaction and analysis ==
+Lawmakers from both parties, including Senators Amy Klobuchar (D-MN) and Josh Hawley (R-MO), spoke positively about the lawsuit. Polling by YouGov in conjunction with The Economist found that Americans approved of the lawsuit by a 41% to 19% margin, with 40% stating they were "not sure".
+Google denied the DOJ's allegations, with a company spokesperson accusing the department of trying to unfairly "pick winners and losers in the highly competitive advertising technology sector." The Chamber of Progress, a tech industry trade group whose membership includes Google, argued that the lawsuit is misguided amid a declining advertising market.
+
+
+=== Legal commentary ===
+Commentators have argued that the basis of the DOJ's case is rooted in a relatively "traditional" interpretation of antitrust law, as opposed to more "novel" theories of anti-competitive harms associated with the New Brandeis movement. The editorial board of The Washington Post praised the lawsuit as "good, old-fashioned antitrust enforcement" in a February 2023 article.
+William Kovacic, a former Republican member of the FTC, has argued that the suit is a serious one that "adds another important complication to Google's efforts to deal with regulators worldwide." Douglas Melamed, who served in the DOJ Antitrust Division during the Clinton Administration, argued that the DOJ "would get a remedy that's going to shake up the market" if able to prove their claim in court. However, Melamed cautioned observers from assuming that the DOJ would win the case.
+
+
+==== Analysis of jury trial request ====
+Commentary surrounding the DOJ's request for a jury trial in the lawsuit has often described the decision as unusually and potentially risky. A January 2023 article in Bloomberg News suggested that the "surprising request" was made due to DOJ concerns about a hostile judicial environment. According to Harry First of the New York University School of Law, the DOJ's effort to "seek damages and demand a jury trial in a monopolization case is unprecedented".
+
+
+== Related lawsuits ==
+According to The New York Times, the lawsuit is the fifth antitrust suit filed against Google by either the federal government or states attorney general since 2020. The DOJ filed a separate antitrust case in October 2020 accusing Google of unlawfully monopolizing the search market. Google's dominant position in the adtech market has additionally received legal scrutiny in both the European Union and the United Kingdom.
+
+
+=== State of Texas v. Google, LLC (2020) ===
+The case has been compared to a separate, state-led antitrust lawsuit targeting Google's adtech practices filed in 2020. The aforementioned lawsuit, led by the Texas Attorney General's office, accuses Google of unlawfully abusing its dominance in digital advertising.  On May 09, 2025, the Texas Attorney General successfully reached $1.375 billion settlement with Google.
+In April 2024, the DOJ requested to file a statement of interest in the case during the discovery process. The State of Texas v. Google, LLC trial was originally scheduled for March 2025 before judge Sean D. Jordan but was postponed to August 2025, and subsequently delayed indefinitely pending the outcome of the federal case.
+
+
+== See also ==
+Antitrust cases against Google
+Antitrust cases against Google by the European Union
+Big Tech
+Criticism of Google
+
+
+== References ==
+
+Ehlert, Andrew (January 8, 2026). "The DOJ Complaint Against Google: A Summary". Digital Ads Recovery Center. Retrieved March 10, 2026.{{cite web}}:  CS1 maint: url-status (link)
+
+
+=== Further reading ===
+Pepper, Alexander H.; Sykes, Jay B. (May 5, 2023). The DOJ's Ad Tech Antitrust Case Against Google: A Brief Overview (Report). Congressional Research Service. Retrieved January 6, 2026.
+
+
+== External links ==
+Case docket for United States v. Google LLC, 1:23-cv-00108, (E.D. Va.) at CourtListener

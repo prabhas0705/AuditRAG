@@ -19,7 +19,7 @@ from engine import AuditRAG
 
 BANNER = """\
 AuditRAG  —  deterministic multi-hop compliance engine
-  load <file-or-folder>   ingest documents
+  load <file-or-folder>   ingest documents (.pdf, .docx, .txt, .md)
   clear                   clear screen
   quit                    exit
 Anything else is a query.\
@@ -43,10 +43,10 @@ def _load(rag, path):
         n = rag.ingest_directory(path)
         print(f"  loaded {n} documents")
     else:
-        with open(path, "r", encoding="utf-8", errors="ignore") as f:
-            text = f.read()
-        rag.ingest_text(os.path.basename(path), text)
-        print(f"  loaded {os.path.basename(path)}")
+        if rag.ingest_file(path):
+            print(f"  loaded {os.path.basename(path)}")
+        else:
+            print(f"  unable to extract text from {os.path.basename(path)}")
     _finalize(rag)
 
 

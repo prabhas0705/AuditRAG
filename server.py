@@ -861,7 +861,7 @@ HTML_PAGE = """<!DOCTYPE html>
                 <div class="panel">
                     <div class="panel-header">
                         <span class="panel-title">Data Room Ingestion</span>
-                        <span class="panel-badge">SEC EDGAR / PDF / TXT</span>
+                        <span class="panel-badge">SEC EDGAR / PDF / DOCX / TXT</span>
                     </div>
                     <input type="text" id="folderInput" class="input-text" placeholder="D:\\Projects\\AuditRAG\\sec_corpus">
                     <button onclick="ingestFolder()" class="btn-secondary">Mount &amp; Ingest Corpus</button>
@@ -1161,8 +1161,13 @@ class AuditRequestHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(result, ensure_ascii=False).encode("utf-8"))
 
         elif self.path == "/api/ingest":
-            folder = data.get("folder", "")
-            count = rag.ingest_directory(folder)
+            path_input = data.get("folder", "").strip()
+            if os.path.isfile(path_input):
+                count = 1 if rag.ingest_file(path_input) else 0
+                rag.index.finalize()
+                rag.planner = AStarEvidencePlanner(rag.index)
+            else:
+                count = rag.ingest_directory(path_input)
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()

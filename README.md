@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-Deterministic multi-hop compliance and evidence engine over legal/regulatory documents.
+Deterministic multi-hop compliance and evidence engine over legal/regulatory documents (.pdf, .docx, .txt, .md).
 Zero pip dependencies — pure Python stdlib.
 
 ```
@@ -16,8 +16,11 @@ auditrag               # starts the REPL
 ```
 
 ```
-AuditRAG > load contracts/
-  loaded 9 documents
+AuditRAG > load contracts/          # loads folder with .pdf, .docx, .txt
+  loaded 11 documents
+
+AuditRAG > load Sample_Agreement.docx
+  loaded Sample_Agreement.docx
 
 AuditRAG > what are Tesla's termination rights?
   ------------------------------------------------------------

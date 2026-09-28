@@ -7,9 +7,13 @@ Standard library only (Ponytail clean).
 
 import json
 import os
+import re
 import sys
 import urllib.request
 import urllib.error
+import zipfile
+import zlib
+import xml.etree.ElementTree as ET
 from typing import Dict, List, Optional, Tuple
 from indexer import HybridIndex
 from planner import AStarEvidencePlanner
@@ -54,14 +58,28 @@ class AuditRAG:
             chunk_id = f"{doc_name}#p{i+1}"
             self.index.add_chunk(chunk_id=chunk_id, doc_name=doc_name, text=p, section=section)
 
+    def _extract_docx_text(self, filepath: str) -> str:
+        """Extracts text from a Word document (.docx) using pure stdlib zipfile + XML."""
+        try:
+            with zipfile.ZipFile(filepath) as z:
+                xml_content = z.read("word/document.xml")
+            tree = ET.fromstring(xml_content)
+            ns = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+            paragraphs = []
+            for p in tree.iter(ns + "p"):
+                texts = [node.text for node in p.iter(ns + "t") if node.text]
+                if texts:
+                    paragraphs.append("".join(texts))
+            return "\n\n".join(paragraphs)
+        except Exception:
+            return ""
+
     def _extract_pdf_text(self, filepath: str) -> str:
-        """Extracts text from a PDF using fitz (PyMuPDF) or pypdf."""
-        text = ""
+        """Extracts text from a PDF. Uses pypdf/fitz if installed, with pure stdlib fallback."""
         try:
             import fitz
             doc = fitz.open(filepath)
-            for page in doc:
-                text += page.get_text("text") + "\n\n"
+            text = "\n\n".join(page.get_text("text") for page in doc)
             if text.strip():
                 return text
         except Exception:
@@ -70,18 +88,63 @@ class AuditRAG:
         try:
             import pypdf
             reader = pypdf.PdfReader(filepath)
-            for page in reader.pages:
-                t = page.extract_text()
-                if t:
-                    text += t + "\n\n"
+            text = "\n\n".join(page.extract_text() or "" for page in reader.pages)
             if text.strip():
                 return text
         except Exception:
             pass
-        return text
 
-    def ingest_directory(self, folder_path: str, extensions: Tuple = (".md", ".txt", ".pdf")):
-        """Recursively ingests documents from a directory (.md, .txt, .pdf)."""
+        # Pure Python standard library fallback (zero pip dependencies)
+        try:
+            with open(filepath, "rb") as f:
+                content = f.read()
+            streams = re.findall(rb"stream\r?\n(.*?)\r?\nendstream", content, re.DOTALL)
+            text_lines = []
+            for s in streams:
+                try:
+                    decomp = zlib.decompress(s)
+                except Exception:
+                    try:
+                        decomp = zlib.decompress(s, -15)
+                    except Exception:
+                        decomp = s
+                for m in re.findall(rb"\(([^\)]*)\)\s*(?:Tj|\')", decomp):
+                    text_lines.append(m.decode("utf-8", errors="ignore"))
+                for arr in re.findall(rb"\[(.*?)\]\s*TJ", decomp):
+                    parts = re.findall(rb"\(([^\)]*)\)", arr)
+                    if parts:
+                        text_lines.append("".join(p.decode("utf-8", errors="ignore") for p in parts))
+            return "\n\n".join(text_lines)
+        except Exception:
+            pass
+        return ""
+
+    def ingest_file(self, filepath: str) -> bool:
+        """Ingests a single document (.pdf, .docx, .txt, .md). Zero dependencies."""
+        if not os.path.exists(filepath):
+            return False
+
+        ext = os.path.splitext(filepath)[1].lower()
+        doc_name = os.path.basename(filepath)
+        text = ""
+
+        if ext == ".pdf":
+            text = self._extract_pdf_text(filepath)
+        elif ext == ".docx":
+            text = self._extract_docx_text(filepath)
+        else:
+            with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+                text = f.read()
+
+        if text and text.strip():
+            self.ingest_text(doc_name=doc_name, text=text)
+            if doc_name not in self.ingested_files:
+                self.ingested_files.append(doc_name)
+            return True
+        return False
+
+    def ingest_directory(self, folder_path: str, extensions: Tuple = (".md", ".txt", ".pdf", ".docx")):
+        """Recursively ingests documents from a directory (.md, .txt, .pdf, .docx)."""
         if not os.path.exists(folder_path):
             print(f"[!] Directory not found: {folder_path}")
             return 0
@@ -92,15 +155,7 @@ class AuditRAG:
                 if file.lower().endswith(extensions):
                     filepath = os.path.join(root, file)
                     try:
-                        if file.lower().endswith(".pdf"):
-                            text = self._extract_pdf_text(filepath)
-                        else:
-                            with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
-                                text = f.read()
-                        
-                        if text and text.strip():
-                            self.ingest_text(doc_name=file, text=text)
-                            self.ingested_files.append(file)
+                        if self.ingest_file(filepath):
                             count += 1
                     except Exception as e:
                         print(f"  [!] Skipped {file}: {e}")
