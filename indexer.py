@@ -181,3 +181,52 @@ class HybridIndex:
 
         ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
         return ranked[:top_k]
+
+    def to_dict(self) -> Dict:
+        """Serializes precomputed index state for instant disk caching."""
+        return {
+            "avg_doc_len": self.avg_doc_len,
+            "k1": self.k1,
+            "b": self.b,
+            "champion_limit": self.champion_limit,
+            "doc_lengths": self.doc_lengths,
+            "champion_lists": self.champion_lists,
+            "graph_edges": {cid: list(edges) for cid, edges in self.graph_edges.items()},
+            "postings": self.postings,
+            "chunks": {
+                cid: {
+                    "chunk_id": c.chunk_id,
+                    "doc_name": c.doc_name,
+                    "content": c.content,
+                    "section": c.section,
+                    "tokens": c.tokens
+                } for cid, c in self.chunks.items()
+            }
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict) -> "HybridIndex":
+        """Reconstructs HybridIndex instantly from cached dictionary without re-tokenizing."""
+        idx = cls(
+            k1=data.get("k1", 1.5),
+            b=data.get("b", 0.75),
+            champion_limit=data.get("champion_limit", 15)
+        )
+        idx.avg_doc_len = data.get("avg_doc_len", 0.0)
+        idx.doc_lengths = data.get("doc_lengths", {})
+        idx.champion_lists = data.get("champion_lists", {})
+        idx.graph_edges = {cid: set(edges) for cid, edges in data.get("graph_edges", {}).items()}
+        idx.postings = data.get("postings", {})
+
+        for cid, cdata in data.get("chunks", {}).items():
+            chunk = Chunk.__new__(Chunk)
+            chunk.chunk_id = cdata["chunk_id"]
+            chunk.doc_name = cdata["doc_name"]
+            chunk.content = cdata["content"]
+            chunk.section = cdata.get("section", "")
+            chunk.tokens = cdata.get("tokens", [])
+            chunk.entities = set()
+            idx.chunks[cid] = chunk
+
+        return idx
+

@@ -27,3 +27,5 @@ Thumbs.db
 graphify-out/
 scratch/
 test_*.js
+*.cache.json
+.auditrag_cache.json

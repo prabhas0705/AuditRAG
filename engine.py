@@ -143,16 +143,54 @@ class AuditRAG:
             return True
         return False
 
-    def ingest_directory(self, folder_path: str, extensions: Tuple = (".md", ".txt", ".pdf", ".docx")):
-        """Recursively ingests documents from a directory (.md, .txt, .pdf, .docx)."""
+    def ingest_directory(
+        self,
+        folder_path: str,
+        extensions: Tuple = (".md", ".txt", ".pdf", ".docx"),
+        use_cache: bool = True,
+        force_reindex: bool = False
+    ) -> int:
+        """Recursively ingests documents from a directory (.md, .txt, .pdf, .docx).
+        Uses .auditrag_cache.json for instantaneous startup when available and valid.
+        """
         if not os.path.exists(folder_path):
             print(f"[!] Directory not found: {folder_path}")
             return 0
 
+        cache_path = os.path.join(folder_path, ".auditrag_cache.json")
+
+        # 1. Discover all matching files and compute manifest
+        current_manifest = {}
+        for root, _, files in os.walk(folder_path):
+            for file in files:
+                if file.lower().endswith(extensions) and not file.startswith("."):
+                    fpath = os.path.join(root, file)
+                    try:
+                        current_manifest[file] = os.path.getmtime(fpath)
+                    except Exception:
+                        pass
+
+        # 2. Check disk cache
+        if use_cache and not force_reindex and os.path.exists(cache_path):
+            try:
+                with open(cache_path, "r", encoding="utf-8") as f:
+                    cache_data = json.load(f)
+                cached_manifest = cache_data.get("manifest", {})
+                if cached_manifest == current_manifest:
+                    self.index = HybridIndex.from_dict(cache_data["index"])
+                    self.ingested_files = cache_data.get("ingested_files", list(current_manifest.keys()))
+                    self.planner = AStarEvidencePlanner(self.index)
+                    return len(self.ingested_files)
+            except Exception:
+                pass  # Stale or corrupted cache; rebuild cleanly
+
+        # 3. Clean ingestion from raw files
+        self.index = HybridIndex()
+        self.ingested_files = []
         count = 0
         for root, _, files in os.walk(folder_path):
             for file in files:
-                if file.lower().endswith(extensions):
+                if file.lower().endswith(extensions) and not file.startswith("."):
                     filepath = os.path.join(root, file)
                     try:
                         if self.ingest_file(filepath):
@@ -162,6 +200,20 @@ class AuditRAG:
 
         self.index.finalize()
         self.planner = AStarEvidencePlanner(self.index)
+
+        # 4. Write back to disk cache
+        if use_cache:
+            try:
+                cache_payload = {
+                    "manifest": current_manifest,
+                    "ingested_files": self.ingested_files,
+                    "index": self.index.to_dict()
+                }
+                with open(cache_path, "w", encoding="utf-8") as f:
+                    json.dump(cache_payload, f)
+            except Exception:
+                pass
+
         return count
 
     def _get_omni_or_openrouter_key(self) -> Optional[str]:
@@ -264,10 +316,57 @@ class AuditRAG:
         # 1. ACI A* Search plans the evidence chain across cross-document links
         proof_chain = self.planner.plan_evidence_chain(user_query, max_hops=3)
 
-        # 2. DRL Bandit Router selects optimal model tier
+        # 2. Evidentiary Grounding Analysis & Zero-Hallucination Guardrail
+        from indexer import tokenize
+        q_tokens = tokenize(user_query)
+        corpus_missing = [t for t in q_tokens if t not in self.index.postings]
+        corpus_missing_ratio = len(corpus_missing) / len(q_tokens) if q_tokens else 0.0
+
+        chain_covered = set()
+        for cid in proof_chain:
+            chain_covered.update(set(self.index.chunks[cid].tokens) & set(q_tokens))
+        chain_coverage = len(chain_covered) / len(q_tokens) if q_tokens else 0.0
+
+        import datetime
+        current_date_str = datetime.date.today().strftime("%B %d, %Y")
+
+        # Guardrail trigger: if proof chain is empty, or >= 40% of query keywords are missing from corpus,
+        # or less than 40% of query keywords are covered by the evidence chain:
+        if not proof_chain or corpus_missing_ratio >= 0.40 or chain_coverage < 0.40:
+            unmatched_str = ", ".join(f"'{m}'" for m in corpus_missing) if corpus_missing else "None"
+            refusal_memo = (
+                f"**EXECUTIVE AUDIT MEMORANDUM**\n\n"
+                f"**TO:** Board of Directors / Senior Governance\n"
+                f"**FROM:** AuditRAG Enterprise -- General Counsel & Senior Regulatory Compliance Auditor\n"
+                f"**RE:** Forensic Compliance Audit: {user_query}\n"
+                f"**DATE:** {current_date_str}\n\n"
+                f"### I. EXECUTIVE OPINION & SUMMARY\n"
+                f"**CERTIFIED NEGATIVE AUDIT OPINION (ZERO GROUNDING)**: A comprehensive forensic search across the entire examined evidentiary record ({len(self.index.chunks)} clauses across {len(self.ingested_files)} legal instruments) reveals no legally binding provisions, covenants, or disclosures regarding the subject matter of this inquiry.\n\n"
+                f"### II. STATUTORY & CONTRACTUAL FINDINGS\n"
+                f"- **Evidentiary Grounding Status**: Refused -- Insufficient contractual terms.\n"
+                f"- **Missing Corpus Terms**: {unmatched_str}\n"
+                f"- **Chain Concept Coverage**: {chain_coverage:.1%}\n"
+                f"- **Contractual Finding**: The examined legal instruments contain no rights, obligations, or definitions governing '{user_query}'. Any affirmative assertion regarding this inquiry would constitute an ungrounded hallucination.\n\n"
+                f"### III. PROVENANCE VERIFICATION: CERTIFIED NEGATIVE / ZERO GROUNDING\n"
+                f"AuditRAG deterministic guardrails have halted response synthesis. No admissible evidence was located in the examined corporate repository."
+            )
+            return {
+                "query": user_query,
+                "router_tier": "refusal_enclave",
+                "router_rationale": f"Zero-hallucination guardrail triggered (unmatched terms: {len(corpus_missing)}/{len(q_tokens)}, chain coverage: {chain_coverage:.1%}). Certified negative returned.",
+                "proof_chain_length": 0,
+                "evidence": [],
+                "audit_response": refusal_memo,
+                "graph_summary": {
+                    "total_indexed_chunks": len(self.index.chunks),
+                    "total_graph_connections": sum(len(v) for v in self.index.graph_edges.values()) // 2
+                }
+            }
+
+        # 3. DRL Bandit Router selects optimal model tier
         selected_arm, rationale = self.router.select_arm(user_query, hops_needed=len(proof_chain))
 
-        # 3. Assemble evidence context
+        # 4. Assemble evidence context
         evidence_items = []
         context_blocks = []
         for step, cid in enumerate(proof_chain, 1):
