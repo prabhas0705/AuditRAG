@@ -10,8 +10,23 @@ Zero pip dependencies — pure Python stdlib.
 ```
 git clone https://github.com/prabhas0705/AuditRAG.git
 cd AuditRAG
+pip install .
 cp .env.example .env   # add Groq key for LLM synthesis (optional)
-python server.py       # http://127.0.0.1:8000
+auditrag               # starts the REPL
+```
+
+```
+AuditRAG > load contracts/
+  loaded 9 documents
+
+AuditRAG > what are Tesla's termination rights?
+  ------------------------------------------------------------
+  FINDING: Tesla may terminate upon 30-day written notice...
+  Citations:
+    [TeslaCredit.txt#p12]  Tesla may terminate this Agreement...
+  ------------------------------------------------------------
+
+AuditRAG > quit
 ```
 
 Without an API key it runs fully offline with extractive synthesis.

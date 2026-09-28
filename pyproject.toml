@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auditrag"
+version = "0.1.0"
+description = "Deterministic multi-hop compliance and evidence engine. Zero pip dependencies."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = []   # pure stdlib — intentional
+
+[project.urls]
+Homepage = "https://github.com/prabhas0705/AuditRAG"
+Issues = "https://github.com/prabhas0705/AuditRAG/issues"
+
+[project.scripts]
+auditrag = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli", "engine", "indexer", "planner", "router", "server"]
