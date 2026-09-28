@@ -1,0 +1,39 @@
+name: Bug Report
+description: Something is broken or producing wrong results
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please include enough detail to reproduce the issue offline.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you run, what did you expect, what did you get?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. python server.py
+        2. Ingested file X
+        3. Queried Y
+        4. Got Z instead of W
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      placeholder: |
+        Python version: 3.11
+        OS: Ubuntu 22.04
+        API key in use: Groq / none (offline)
+    validations:
+      required: true

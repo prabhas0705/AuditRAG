@@ -1,5 +1,9 @@
 # AuditRAG
 
+![CI](https://github.com/prabhas0705/AuditRAG/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 Deterministic multi-hop compliance and evidence engine over legal/regulatory documents.
 Zero pip dependencies — pure Python stdlib.
 
@@ -45,6 +49,10 @@ sec_corpus/            benchmark contracts
 | Fact grounding | 90.6% |
 | Hallucination rate | 0% |
 | Pip dependencies | 0 |
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). The only hard rule: no pip dependencies.
 
 ## License
 

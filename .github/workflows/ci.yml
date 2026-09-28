@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Syntax check (zero-dep guarantee)
+        run: |
+          python -m py_compile indexer.py planner.py router.py engine.py server.py cli.py
+          echo "All modules compile clean."
+
+      - name: Run SEC EDGAR benchmark
+        run: python evaluate_sec.py
+        env:
+          # No API key = offline extractive mode, which is what we test
+          GROQ_API_KEY: ""
